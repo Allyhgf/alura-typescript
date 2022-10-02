@@ -4,6 +4,7 @@ import { Negociacoes } from "../models/negociacoes.js";
 export class NegociacoesView extends View<Negociacoes> {
 
     template(model: Negociacoes): string{
+
         return `
             <table class="table table-hover table-bordered">
                 <thead>
@@ -26,6 +27,7 @@ export class NegociacoesView extends View<Negociacoes> {
                 </tbody>
             </table>
         `;
+        
     }
 
 }
