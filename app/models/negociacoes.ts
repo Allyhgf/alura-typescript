@@ -4,13 +4,13 @@ export class Negociacoes {
 
     private negociacoes: Negociacao[] = [];
 
-    adicionar(negociacao: Negociacao): void{
+    public adicionar(negociacao: Negociacao): void{
 
         this.negociacoes.push(negociacao);
 
     }
     
-    listar(): readonly Negociacao[]{
+    public listar(): readonly Negociacao[]{
 
         return this.negociacoes;
         
