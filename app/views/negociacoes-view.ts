@@ -4,7 +4,6 @@ import { Negociacoes } from "../models/negociacoes.js";
 export class NegociacoesView extends View<Negociacoes> {
 
     protected template(model: Negociacoes): string {
-
         return `
             <table class="table table-hover table-bordered">
                 <thead>
@@ -32,12 +31,9 @@ export class NegociacoesView extends View<Negociacoes> {
                 </tbody>
             </table>
         `;
-
   }
 
     private formatar(data: Date): string {
-
         return new Intl.DateTimeFormat().format(data);
-
     }
 }
